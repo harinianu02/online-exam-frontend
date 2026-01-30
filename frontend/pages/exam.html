@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Examination</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="top-bar">
+  <h2>Welcome, <span id="studentName"></span></h2>
+  <div class="timer">Time Left: <span id="timer">01:00</span></div>
+</header>
+
+<div class="exam-container">
+  <div class="question-card">
+    <h3 id="questionText">Loading...</h3>
+    <div class="options" id="options"></div>
+
+    <div class="exam-actions">
+      <button class="btn-primary" onclick="nextQuestion()">Next</button>
+    </div>
+  </div>
+</div>
+
+<!-- IMPORTANT: Script order -->
+<script src="../js/exam.js"></script>
+<script src="../js/proctor.js"></script>
+
+<script>
+  const user = localStorage.getItem("username");
+  if (!user) {
+    alert("Please login first");
+    window.location.href = "login.html";
+  } else {
+    document.getElementById("studentName").textContent = user;
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== GLOBAL BACKGROUND ===== */
+body {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  min-height: 100vh;
+}
+
+/* ================= LOGIN PAGE ================= */
+.login-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  background: #ffffff;
+  width: 360px;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.login-card h2 {
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #64748b;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.login-card input,
+.login-card select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #1e40af;
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* ================= TOP BAR ================= */
+.top-bar {
+  background: #1e40af;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer {
+  background: #dc2626;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* ================= DASHBOARD ================= */
+.dashboard-container {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  width: 520px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.card input,
+.card textarea,
+.card select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.card textarea {
+  height: 80px;
+  resize: none;
+}
+
+.publish-btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ================= EXAM PAGE ================= */
+.exam-container {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.question-card {
+  background: white;
+  width: 650px;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+
+.question-card h3 {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+/* Options */
+.options label {
+  display: block;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.options label:hover {
+  background: #eff6ff;
+  border-color: #2563eb;
+}
+
+.options input {
+  margin-right: 10px;
+}
+
+/* Buttons */
+.exam-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ================= RESULT PAGE ================= */
+.result-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-card {
+  background: #ffffff;
+  padding: 35px 40px;
+  border-radius: 14px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.result-card h2 {
+  margin-bottom: 20px;
+  color: #1e40af;
+}
+
+.result-card p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.result-card button {
+  margin-top: 20px;
+  width: 100%;
+}

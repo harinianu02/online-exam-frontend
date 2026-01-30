@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Examination System - Login</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="login-card">
+
+      <h2>Online Examination System</h2>
+      <p class="subtitle">Secure Login</p>
+
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+
+        <select id="role" required>
+          <option value="">Select Role</option>
+          <option value="student">Student</option>
+          <option value="faculty">Faculty</option>
+        </select>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p class="footer-text">© 2026 Online Exam System</p>
+    </div>
+  </div>
+
+  <!-- ✅ IMPORTANT -->
+  <script src="auth.js"></script>
+</body>
+</html>

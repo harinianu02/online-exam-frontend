@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faculty Dashboard</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="top-bar">
+    <h2>Faculty Dashboard</h2>
+    <button class="logout-btn">Logout</button>
+  </header>
+
+  <!-- Main Content -->
+  <div class="dashboard-container">
+
+    <div class="card">
+      <h3>Create New Exam</h3>
+
+      <input type="text" id="examTitle" placeholder="Exam Title">
+
+      <input type="number" id="examDuration" placeholder="Duration (minutes)">
+
+      <textarea id="questionText" placeholder="Enter Question"></textarea>
+
+      <input type="text" placeholder="Option A">
+      <input type="text" placeholder="Option B">
+      <input type="text" placeholder="Option C">
+      <input type="text" placeholder="Option D">
+
+      <select>
+        <option>Select Correct Answer</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+      </select>
+
+      <button onclick="addQuestion()">Add Question</button>
+      <button class="publish-btn">Publish Exam</button>
+    </div>
+
+  </div>
+
+  <script src="../assets/js/exam.js"></script>
+</body>
+</html>
